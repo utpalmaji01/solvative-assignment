@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# City Explorer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+City Explorer is a React-based web application that allows users to search for cities and view their details. It uses the GeoDB Cities API to fetch city data and provides a user-friendly interface for exploring this information.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Search for cities by name
+- Display city information including country and flag
+- Pagination for search results
+- Adjustable number of cities displayed per page
+- Responsive design for various screen sizes
+- Error handling and user feedback
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone the repository:
+   git clone https://github.com/your-username/city-explorer.git
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
+   cd city-explorer
 
-### `npm test`
+3. Install the dependencies:
+   npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Create a `.env` file in the root directory and add your RapidAPI key:
+   REACT_APP_RAPIDAPI_KEY=your_api_key_here
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Start the development server:
+   npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Open your browser and visit `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Use the search box to look for cities. Press Enter or click the search icon to initiate the search.
 
-### `npm run eject`
+4. Navigate through the results using the pagination controls at the bottom of the page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. Adjust the number of cities displayed per page using the input field in the bottom right corner.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Key
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This project uses the GeoDB Cities API from RapidAPI. To run the project, you'll need to sign up for a free account at RapidAPI (https://rapidapi.com/) and subscribe to the GeoDB Cities API.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once you have your API key, add it to the `.env` file as described in the Installation section.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
