@@ -14,16 +14,16 @@ City Explorer is a React-based web application that allows users to search for c
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/your-username/city-explorer.git
+   git clone https://github.com/utpalmaji01/solvative-assignment.git
 
 2. Navigate to the project directory:
-   cd city-explorer
+   cd solvative-assignment
 
 3. Install the dependencies:
    npm install
 
 4. Create a `.env` file in the root directory and add your RapidAPI key:
-   REACT_APP_RAPIDAPI_KEY=your_api_key_here
+   REACT_APP_RAPIDAPI_KEY=your_api_key_here(should be in string)
 
 ## Usage
 

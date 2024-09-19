@@ -154,42 +154,43 @@ body {
 }
 
 .cities-per-page {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-
-  span {
-    margin-right: 0.5rem;
-    font-weight: 500;
-    color: #2c3e50;
-  }
-
-  input {
-    width: 50px;
-    padding: 0.25rem 0.5rem;
-    border: 1px solid #e1e8ed;
-    border-radius: 4px;
-    font-size: 1rem;
-    text-align: center;
-    background-color: #ffffff;
-
-    &::-webkit-inner-spin-button,
-    &::-webkit-outer-spin-button {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  
+    span {
+      margin-right: 0.5rem;
+      font-weight: 500;
+    }
+  
+    input {
+      width: 50px;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      text-align: center;
+  
+      // Remove default spinner buttons
       -webkit-appearance: none;
-      margin: 0;
-    }
-
-    &[type="number"] {
       -moz-appearance: textfield;
-    }
-
-    &:focus {
-      outline: none;
-      border-color: #3498db;
-      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+      appearance: none;
+  
+      // Custom styling for Webkit browsers (Chrome, Safari)
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+  
+      // Focus styles
+      &:focus {
+        outline: none;
+        border-color: #7952b3;
+        box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+      }
     }
   }
-}
 
 .warning {
   padding: 0.75rem 1rem;
